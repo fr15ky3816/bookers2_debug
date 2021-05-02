@@ -50,7 +50,7 @@
         <table class="table">
           <tr>
             <td>
-            <%= attachment_image_tag(post_comment.user, :profile_image, :fill, 100, 100, fallback: "no-image-icon.jpg") %>
+            <%= attachment_image_tag(post_comment.user, :profile_image, :fill, 50, 50, fallback: "no-image-icon.jpg") %>
             <%= post_comment.user.name %>
             <%= post_comment.comment %>
             <% if post_comment.user == current_user %>
